@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Center the logo and zoom in by using large negative insets -->
+    <item
+        android:drawable="@drawable/app_logo"
+        android:top="-100dp"
+        android:bottom="-100dp"
+        android:left="-100dp"
+        android:right="-100dp"
+        android:gravity="center" />
+</layer-list>

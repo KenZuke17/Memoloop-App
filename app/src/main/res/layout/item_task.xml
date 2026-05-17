@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_pill"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/app_logo"
+            android:alpha="0.1"
+            android:contentDescription="@string/app_logo_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLabelTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTaskValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Networking Assignment"
+            android:textColor="@color/gray_text"
+            app:layout_constraintEnd_toStartOf="@id/ivTaskItemLogo"
+            app:layout_constraintStart_toEndOf="@id/tvLabelTask"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vDiv1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEE"
+            app:layout_constraintEnd_toStartOf="@id/ivTaskItemLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTaskValue" />
+
+        <TextView
+            android:id="@+id/tvLabelDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Due Date"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vDiv1" />
+
+        <TextView
+            android:id="@+id/tvDueValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="02.04.2025"
+            android:textColor="@color/gray_text"
+            app:layout_constraintEnd_toStartOf="@id/ivTaskItemLogo"
+            app:layout_constraintStart_toEndOf="@id/tvLabelDue"
+            app:layout_constraintTop_toTopOf="@id/tvLabelDue" />
+
+        <View
+            android:id="@+id/vDiv2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEE"
+            app:layout_constraintEnd_toStartOf="@id/ivTaskItemLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDueValue" />
+
+        <TextView
+            android:id="@+id/tvLabelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vDiv2" />
+
+        <TextView
+            android:id="@+id/tvStatusValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Done"
+            android:textColor="@color/gray_text"
+            app:layout_constraintEnd_toStartOf="@id/ivTaskItemLogo"
+            app:layout_constraintStart_toEndOf="@id/tvLabelStatus"
+            app:layout_constraintTop_toTopOf="@id/tvLabelStatus" />
+
+        <ImageView
+            android:id="@+id/ivTaskItemLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/app_logo"
+            app:tint="@color/teal_light"
+            android:alpha="0.3"
+            android:contentDescription="@string/app_logo_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

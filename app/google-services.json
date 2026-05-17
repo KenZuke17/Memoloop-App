@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "477957600334",
+    "project_id": "memoloop-668f7",
+    "storage_bucket": "memoloop-668f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477957600334:android:a08771d5faeca3ed19bf1f",
+        "android_client_info": {
+          "package_name": "com.example.memoloop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc8SACLVp9a6wffbqgwfx2CyCPBczcg5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

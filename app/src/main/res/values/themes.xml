@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Memoloop" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Memoloop" parent="Base.Theme.Memoloop" />
+
+    <!-- Theme for Splash Screen to hide system icon on Android 12+ -->
+    <style name="Theme.Memoloop.Splash" parent="Theme.Memoloop">
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@android:color/transparent</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/white</item>
+    </style>
+</resources>
